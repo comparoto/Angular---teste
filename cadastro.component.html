@@ -1,0 +1,68 @@
+<div class="cadastro-container">
+    <div class="cadastro-header">
+        <h1>Cadastro</h1>
+    </div>
+
+    <form class="cadastro-form" [formGroup]="cadastroForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>Insira seu email</label>
+            <input type="email" placeholder="seu@email.com" formControlName="email">
+        </div>
+
+        <div class="form-group">
+            <label>Informe o telefone</label>
+            <input type="tel" placeholder="(00) 00000-0000" formControlName="telefone">
+        </div>
+
+        <div class="form-group">
+            <label>Insira sua senha</label>
+            <input type="password" placeholder="Sua senha" formControlName="senha">
+        </div>
+
+        <div class="form-group">
+            <label>Confirme sua senha</label>
+            <input type="password" placeholder="Confirme sua senha" formControlName="confirmarSenha">
+        </div>
+
+        <div class="form-divider"></div>
+
+        <div class="select-group">
+            <div class="form-group">
+                <label>Estado</label>
+                <select formControlName="estado">
+                    <option value="">Selecione</option>
+                    <option>Pernambuco</option>
+                    <option>Minas Gerais</option>
+                    <option>São Paulo</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>RD</label>
+                <select formControlName="regiao">
+                    <option value="">Selecione</option>
+                    <option>Região 1</option>
+                    <option>Região 2</option>
+                    <option>Região 3</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Cultivo</label>
+            <select formControlName="cultivo">
+                <option value="">Selecione</option>
+                <option>Soja</option>
+                <option>Milho</option>
+                <option>Café</option>
+                <option>Algodão</option>
+            </select>
+        </div>
+
+        <button type="submit" class="button-registrar">Registrar</button>
+
+        <div class="login-link">
+            Já tem uma conta? <a routerLink="/login">Faça login</a>
+        </div>
+    </form>
+</div>
