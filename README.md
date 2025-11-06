@@ -75,7 +75,7 @@ exemplo: protege-agro
    - app.config.ts (Arquivo de configuração da aplicação)
    - app.routes.ts (Arquivo de configuração das rotas da aplicação)
 
-- Cada vez que for criar outra pasta que exija esse mesmo estilo, se digita:
+- Cada vez que for criar outra pasta (componente) que exija esse mesmo estilo, se digita:
 - ng generate component nome
   (exemplo: ng generate component cadastro)
 
@@ -89,5 +89,5 @@ exemplo: protege-agro
 
 - [Site com mais explicação sobre cada item do Angular](https://doc.magnasistemas.com.br/arquitetura/guia-referencia-tecnologica/front-end/angular/)
 
- 
-  
+- Adicionei todos os códigos das páginas editadas no teste do Angular para o Protege Agro, lembrando que adicionei 4 componentes: home, cadastro, login e user.
+- Lembrando também que já estão conectados (login.component.ts  e cadastro.component.ts) com a API em Spring Boot que está em outro repositório, então caso vá testar rodar esses códigos e der algum erro, é por isso.
