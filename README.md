@@ -46,15 +46,15 @@ exemplo: protege-agro
   
    - .editorconfig
    - .gitignore
-   - angular.json
+   - angular.json (configurações do angular)
    - package-lock.json
-   - package.json
+   - package.json (responsável pelo javascrpit através do node, com suas configurações e as definições básicas)
    - README.md
    - tsconfig.app.json
-   - tsconfig.json
+   - tsconfig.json (responsável pelo typescript, com suas configurações e definições básicas)
    - tsconfig.spec.json
 
- - Relaxa o coração que a gente só vai mexer dentro de public e src
+ - Relaxa o coração que a gente só vai mexer dentro de public e src, basicamente o que está fora da pasta src são arquivos de configuração
 
  - Em public estão somente nossos assets
  - Em src o negócio expande
@@ -68,16 +68,26 @@ exemplo: protege-agro
 
 # app
 - Dentro de app vão ter os seguintes arquivos:
-   - app.component.css
-   - app.component.html
-   - app.component.spec.ts
-   - app.component.ts
-   - app.config.ts
-   - app.routes.ts
+   - app.component.css (Arquivo de estilos CSS do componente principal da aplicação)
+   - app.component.html (Arquivo de template HTML do componente principal da aplicação)
+   - app.component.spec.ts (Testes unitários para o componente)
+   - app.component.ts (Arquivo TypeScript do componente principal da aplicação)
+   - app.config.ts (Arquivo de configuração da aplicação)
+   - app.routes.ts (Arquivo de configuração das rotas da aplicação)
 
 - Cada vez que for criar outra pasta que exija esse mesmo estilo, se digita:
 - ng generate component nome
   (exemplo: ng generate component cadastro)
+
+# Componentes
+- Toda vez que se criar um novo componente, ele virá nessa configuração:
+  
+- nome-do-componente.component.html: O template do componente.
+- nome-do-componente.component.css (ou .scss): Os estilos do componente.
+- nome-do-componente.component.ts: A classe do componente.
+- nome-do-componente.component.spec.ts: Testes unitários para o componente.
+
+- [Site com mais explicação sobre cada item do Angular](https://doc.magnasistemas.com.br/arquitetura/guia-referencia-tecnologica/front-end/angular/)
 
  
   
